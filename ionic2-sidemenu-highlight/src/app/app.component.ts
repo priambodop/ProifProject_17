@@ -4,15 +4,18 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 //import { Page1 } from '../pages/page1/page1';
 //import { Page2 } from '../pages/page2/page2';
+import { RugbyService } from './services/rugby.service';
 import { News } from '../pages/news/news';
 import { Fixtures } from '../pages/fixtures/fixtures';
 import { Teammate } from '../pages/teammate/teammate';
 import { Rugby101 } from '../pages/rugby101/rugby101';
 import { RugbyClubs } from '../pages/rugbyClubs/rugbyClubs';
+import { BetaTested } from '../pages/betaTested/betaTested';
 
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers: [RugbyService]
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
@@ -32,7 +35,8 @@ export class MyApp {
       { title: 'Fixtures & Results',  component: Fixtures},
       { title: 'Teammate Photos', component: Teammate },
       { title: 'Rugby 101', component: Rugby101 },
-      { title: 'Rugby Clubs', component: RugbyClubs }
+      { title: 'Rugby Clubs', component: RugbyClubs },
+      { title: 'Beta Tested', component: BetaTested }
     ];
 
   }

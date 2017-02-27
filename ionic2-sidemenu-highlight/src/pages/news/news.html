@@ -9,35 +9,20 @@
 
 <ion-content padding>
   <h3>This is News Page !</h3>
-  <ion-card>
 
-
-
-  <img src="../assets/image/download.jpeg">
-
+  <ion-card *ngFor = "let item of items">
+  <img src="{{item.img}}"/>
   <ion-card-content>
-    <p>Ruff Ruff Ruff Ruff. Snoop Doooooooogg</p>
+    <ion-card-title>
+      {{item.title}}
+      </ion-card-title>
+    <p>
+      {{item.summary}}
+    </p>
+    <p>
+      <a href="{{item.summary}}"><i>read more...</i></a>
+    </p>
   </ion-card-content>
-
-  <ion-row>
-    <ion-col>
-      <button ion-button icon-left clear small>
-        <ion-icon name="thumbs-up"></ion-icon>
-        <div>12 Likes</div>
-      </button>
-    </ion-col>
-    <ion-col>
-      <button ion-button icon-left clear small>
-        <ion-icon name="text"></ion-icon>
-        <div>4 Comments</div>
-      </button>
-    </ion-col>
-    <ion-col center text-center>
-      <ion-note>
-        11h ago
-      </ion-note>
-    </ion-col>
-  </ion-row>
-
 </ion-card>
-</ion-content>
+
+  </ion-content>
