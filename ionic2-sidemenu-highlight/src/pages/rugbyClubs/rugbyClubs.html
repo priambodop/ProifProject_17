@@ -9,4 +9,8 @@
 
 <ion-content padding>
   <h3>This is Rugby Clubs Page !</h3>
+  <ion-card *ngFor = "let item of items">
+    <img src="{{item.img}}"/>
+
+  </ion-card>
 </ion-content>
