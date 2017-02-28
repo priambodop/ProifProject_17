@@ -9,10 +9,17 @@ export class RugbyService{
   fixturesUrl: String;
 
   constructor(http:Http){
+    
     this.http = http;
+    this.baseUrl = "https://ri-admin.azurewebsites.net/indonesianrugby/news/list.json ";
+    this.fixturesUrl = "https://ri-admin.azurewebsites.net/indonesianrugby/fixtures/list.json";
   }
 
   getPosts(){
     return this.http.get(this.baseUrl).map(res => res.json());
+  }
+
+  getFixtures(){
+    return this.http.get(this.fixturesUrl).map(res => res.json());
   }
 }
