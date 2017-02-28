@@ -3,13 +3,16 @@
     <button ion-button menuToggle right>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>News</ion-title>
+    <ion-title >News</ion-title>
   </ion-navbar>
+
+
 </ion-header>
 
-<ion-content padding>
-  <h3>This is News Page !</h3>
-
+<ion-content>
+  <ion-header padding centre class="header">
+    <h3>This is News Page !</h3>
+  </ion-header>
   <ion-card *ngFor = "let item of items">
   <img src="{{item.img}}"/>
   <ion-card-content>
