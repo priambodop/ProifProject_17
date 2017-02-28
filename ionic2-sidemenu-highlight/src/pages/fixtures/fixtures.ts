@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-
 import { NavController } from 'ionic-angular';
+import { RugbyService } from '../../app/services/rugby.service';
 
 @Component({
   selector: 'fixtures',
@@ -8,8 +8,20 @@ import { NavController } from 'ionic-angular';
 })
 export class Fixtures {
 
-  constructor(public navCtrl: NavController) {
+  items: [any];
 
+  constructor(public navCtrl: NavController, private rugbyService: RugbyService) {
+
+  }
+
+  ngOnInit(){
+    this.getFixtures();
+  }
+
+  getFixtures(){
+    this.rugbyService.getFixtures().subscribe(response => {
+      this.items = response;
+    });
   }
 
 }

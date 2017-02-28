@@ -12,29 +12,11 @@
 
   <ion-content class="card-background-page">
 
-  <ion-card>
-    <img src="image/download.jpeg"/>
-    <div class="card-title">São Paulo</div>
-    <div class="card-subtitle">41 Listings</div>
+  <ion-card *ngFor = "let item of items">
+    <img src="{{item.img}}"/>
+    <div class="card-title">{{item.title}}</div>
+    
   </ion-card>
 
-  <ion-card>
-    <img src="image/download.jpeg"/>
-    <div class="card-title">Amsterdam</div>
-    <div class="card-subtitle">64 Listings</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="image/download.jpeg"/>
-    <div class="card-title">San Francisco</div>
-    <div class="card-subtitle">72 Listings</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="image/download.jpeg"/>
-    <div class="card-title">Madison</div>
-    <div class="card-subtitle">28 Listings</div>
-  </ion-card>
-
-</ion-content>
+  </ion-content>
 </ion-content>

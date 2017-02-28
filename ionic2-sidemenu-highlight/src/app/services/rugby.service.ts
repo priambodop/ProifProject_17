@@ -6,10 +6,10 @@ import 'rxjs/Rx';
 export class RugbyService{
   http: any;
   baseUrl: String;
+  fixturesUrl: String;
 
   constructor(http:Http){
     this.http = http;
-    this.baseUrl = "https://ri-admin.azurewebsites.net/indonesianrugby/news/list.json "; 
   }
 
   getPosts(){
