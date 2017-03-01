@@ -7,13 +7,14 @@ import {RugbyService} from '../../app/services/rugby.service';
   templateUrl: 'rugbyClubs.html'
 })
 export class RugbyClubs {
+
   items: [any];
 
   constructor(public navCtrl: NavController, private rugbyService: RugbyService) {
 
   }
 
-  ngOnInt(){
+  ngOnInit(){
     this.getClubs();
   }
 

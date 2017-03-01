@@ -9,16 +9,13 @@
 
 <ion-content padding>
   <h3>This is Rugby Clubs Page !</h3>
-  <ion-list>
-  <ion-item *ngFor = "let item of items">
-    <ion-thumbnail item-left>
-      <img src="{{item.img}}">
-    </ion-thumbnail>
-    <h2>{{item.name}}</h2>
-    <p>
-      {{item.location_training}} <br/>
-      
-    </p>
-  </ion-item>
-</ion-list>
+  <ion-content class ="card-background-page">
+
+  <ion-card *ngFor = "let item of items">
+    <img src = "{{item.img}}"/>
+    <div class = "card-title">{{item.title}}</div>
+
+  </ion-card>
+  </ion-content>
+
 </ion-content>
