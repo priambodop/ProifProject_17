@@ -2,8 +2,13 @@ news {
 
   .header {
     color: white;
-    background-color: red;
+    //background-color: red;
     align-self: center;
+    background-image: url('image/sub-header-news.png');
+  }
+
+  ion-card{
+    margin-top: 10;
   }
 
 }
