@@ -1,3 +1,7 @@
+.header {
+  background-image: url("image/header.png");
+}
+
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -21300,13 +21304,12 @@ sub {
 }
 
 news .header {
-  color: white;
-  background-color: red;
+  color: black;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  background-image: url("img/sub-header-news.png");
+  background: url("img/sub-header-news.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
