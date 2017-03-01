@@ -21300,14 +21300,16 @@ sub {
 }
 
 news .header {
-  color: white;
+  color: black;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
   background-image: url("image/sub-header-news.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 news ion-card {
-  margin-top: 10;
+  margin-top: 10px;
 }
