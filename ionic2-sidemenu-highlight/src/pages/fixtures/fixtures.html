@@ -7,22 +7,22 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding [ngSwitch]='status'>
+
+  <div *ngSwitchCase="'loading'">
+    <ion-spinner name="bubbles" center></ion-spinner>
+  </div>
   
-  <ion-list *ngFor="let item of items">
-      <a href={{item.url}}><img src={{item.img}}/></a>
-  </ion-list>
+  <div *ngSwitchCase="'active'">
+    <ion-list *ngFor="let item of items">
+        <a href={{item.url}}><img src={{item.img}}/></a>
+    </ion-list>
+    <ion-content class="card-background-page">
+      <ion-card *ngFor = "let item of items">
+        <img src="{{item.img}}"/>
+        <div class="card-title">{{item.title}}</div>
+      </ion-card>
+    </ion-content>
+  </div>
 
-<<<<<<< HEAD
-  <ion-content class="card-background-page">
-
-  <ion-card *ngFor = "let item of items">
-    <img src="{{item.img}}"/>
-    <div class="card-title">{{item.title}}</div>
-
-  </ion-card>
-
-  </ion-content>
-=======
->>>>>>> 53f17935cf05c5664be3a0f1a736618670e5f2b9
 </ion-content>

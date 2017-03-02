@@ -9,9 +9,11 @@ import {RugbyService} from '../../app/services/rugby.service';
 export class RugbyClubs {
 
   items: [any];
+  public status: string;
+
 
   constructor(public navCtrl: NavController, private rugbyService: RugbyService) {
-
+    this.status = 'loading';
   }
 
   ngOnInit(){
@@ -21,6 +23,7 @@ export class RugbyClubs {
   getClubs(){
     this.rugbyService.getClubs().subscribe(response => {
       this.items = response;
+      this.status = 'active';
     });
   }
 

@@ -9,13 +9,19 @@
 
 <ion-content padding>
   <h3>This is Rugby Clubs Page !</h3>
-  <ion-content class ="card-background-page">
+  <ion-content class ="card-background-page" [ngSwitch]='status'>
 
-  <ion-card *ngFor = "let item of items">
-    <img src = "{{item.img}}"/>
-    <div class = "card-title">{{item.title}}</div>
+    <div *ngSwitchCase="'loading'">
+      <ion-spinner name="bubbles" center></ion-spinner>
+    </div>
+    <div *ngSwitchCase="'active'">
+      <ion-card *ngFor = "let item of items">
+        <img src = "{{item.img}}"/>
+        <div class = "card-title">{{item.title}}</div>
 
-  </ion-card>
+      </ion-card>
+    </div>
+
   </ion-content>
 
 </ion-content>
