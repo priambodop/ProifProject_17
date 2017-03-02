@@ -21277,6 +21277,10 @@ sub {
   }
 }
 
+.top-header {
+  background: url("../../assets/image/header.png");
+}
+
 .card-background-page h3 {
   position: absolute;
 }
@@ -21304,12 +21308,25 @@ sub {
 }
 
 news .header {
-  color: black;
+  color: white;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  background: url("img/sub-header-news.png");
-  background-repeat: no-repeat;
+  background: url("../../assets/image/sub-header-news.png");
+  background-size: cover;
+}
+
+news .card {
+  margin-top: 68px;
+}
+
+news .head {
+  color: white;
+  background: url("../../assets/image/header.png");
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   background-size: cover;
 }

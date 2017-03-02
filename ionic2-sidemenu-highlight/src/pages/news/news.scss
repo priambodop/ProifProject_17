@@ -1,12 +1,23 @@
 news {
 
   .header {
-    color: black;
-    //background-color: red;
+    color: white;
+
     align-self: center;
-    background: url('img/sub-header-news.png');
-    background-repeat: no-repeat;
+    background: url('../../assets/image/sub-header-news.png');
+    //background-repeat: no-repeat;
     background-size:cover;
+  }
+
+  .card{
+    margin-top: 68px;
+  }
+
+  .head{
+    color:white;
+    background: url('../../assets/image/header.png');
+    align-self: center;
+    background-size: cover;
   }
 
 
