@@ -1,5 +1,5 @@
 <ion-header >
-  <ion-navbar class="head">
+  <ion-navbar >
     <button ion-button menuToggle right>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -13,19 +13,28 @@
   <ion-header padding centre class="header">
     <h3>This is News Page !</h3>
   </ion-header>
-  <ion-card *ngFor = "let item of items" class="card">
-  <img src="{{item.img}}"/>
-  <ion-card-content>
-    <ion-card-title>
-      {{item.title}}
-      </ion-card-title>
-    <p>
-      {{item.summary}}
-    </p>
-    <p>
-      <a href="{{item.summary}}"><i>read more...</i></a>
-    </p>
-  </ion-card-content>
-</ion-card>
 
-  </ion-content>
+  <div [ngSwitch]='status'>
+      <div *ngSwitchCase="'loading'">
+        <ion-spinner name="bubbles" center></ion-spinner>
+      </div>
+      <div *ngSwitchCase="'active'">
+        <ion-card *ngFor = "let item of items">
+        <img src="{{item.img}}"/>
+          <ion-card-content>
+            <ion-card-title>
+              {{item.title}}
+              </ion-card-title>
+            <p>
+              {{item.summary}}
+            </p>
+            <p>
+              <a href="{{item.url}}"><i>read more...</i></a>
+            </p>
+          </ion-card-content>
+        </ion-card>}
+      </div>
+  </div>
+
+
+</ion-content>
