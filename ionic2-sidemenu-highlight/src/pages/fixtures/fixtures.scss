@@ -1,13 +1,4 @@
-.card-background-page {
-
-  h3{
-    position: absolute;
-  }
-
-  ion-card {
-    position: relative;
-    text-align: center;
-  }
+Fixtures {
 
   .card-title {
     position: absolute;
@@ -26,6 +17,18 @@
     color: #fff;
   }
 
-  
+
+  .header {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    background: url('../../assets/image/sub-header-news.png');
+    //background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: 20%;
+    background-position: bottom;
+  }
+
+
 
 }

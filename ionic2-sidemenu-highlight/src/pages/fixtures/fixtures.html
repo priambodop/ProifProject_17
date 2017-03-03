@@ -1,18 +1,12 @@
-<ion-header  >
-  <ion-navbar >
-    <button ion-button menuToggle end>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Fixtures & Result</ion-title>
-  </ion-navbar>
+
+<ion-header center class="header">
+  <ion-title><h1>FIXTURES AND RESULT</h1></ion-title>
 </ion-header>
 
 <ion-content padding [ngSwitch]='status'>
 
-  <div *ngSwitchCase="'loading'">
-    <ion-spinner name="bubbles" center></ion-spinner>
-  </div>
-  
+  <ion-spinner name="bubbles" *ngSwitchCase="'loading'"></ion-spinner>
+
   <div *ngSwitchCase="'active'">
     <ion-list *ngFor="let item of items">
         <a href={{item.url}}><img src={{item.img}}/></a>

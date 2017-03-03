@@ -1,39 +1,27 @@
-<ion-header >
-  <ion-navbar >
-    <button ion-button menuToggle right>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title >News</ion-title>
-  </ion-navbar>
 
-
+<ion-header center class="header">
+  <ion-title><h1>LATEST NEWS</h1></ion-title>
 </ion-header>
 
-<ion-content>
-  <ion-header padding centre class="header">
-    <h3>This is News Page !</h3>
-  </ion-header>
+<ion-content  [ngSwitch]='status'>
 
-  <div [ngSwitch]='status'>
-      <div *ngSwitchCase="'loading'">
-        <ion-spinner name="bubbles" center></ion-spinner>
-      </div>
-      <div *ngSwitchCase="'active'">
-        <ion-card *ngFor = "let item of items">
-        <img src="{{item.img}}"/>
-          <ion-card-content>
-            <ion-card-title>
-              {{item.title}}
-              </ion-card-title>
-            <p>
-              {{item.summary}}
-            </p>
-            <p>
-              <a href="{{item.url}}"><i>read more...</i></a>
-            </p>
-          </ion-card-content>
-        </ion-card>
-      </div>
+  <ion-spinner name="bubbles"  *ngSwitchCase="'loading'"></ion-spinner>
+
+  <div *ngSwitchCase="'active'">
+    <ion-card *ngFor = "let item of items">
+    <img src="{{item.img}}"/>
+      <ion-card-content>
+        <ion-card-title>
+          {{item.title}}
+          </ion-card-title>
+        <p>
+          {{item.summary}}
+        </p>
+        <p>
+          <a href="{{item.url}}"><i>read more...</i></a>
+        </p>
+      </ion-card-content>
+    </ion-card>
   </div>
 
 

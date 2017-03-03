@@ -11,7 +11,6 @@ export class News {
   items : [any];
   public status: string;
 
-
   constructor(public navCtrl: NavController, private rugbyService: RugbyService) {
       this.status = 'loading';
   }

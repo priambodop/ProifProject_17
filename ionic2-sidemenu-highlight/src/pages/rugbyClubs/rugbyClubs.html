@@ -1,27 +1,17 @@
-<ion-header >
-  <ion-navbar >
-    <button ion-button menuToggle end>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Rugby Clubs</ion-title>
-  </ion-navbar>
+<ion-header center class="header">
+  <ion-title><h1>RUGBY CLUBS</h1></ion-title>
 </ion-header>
 
-<ion-content padding>
-  <h3>This is Rugby Clubs Page !</h3>
-  <ion-content class ="card-background-page" [ngSwitch]='status'>
+<ion-content padding [ngSwitch]='status'  class ="card-background-page">
 
-    <div *ngSwitchCase="'loading'">
-      <ion-spinner name="bubbles" center></ion-spinner>
-    </div>
-    <div *ngSwitchCase="'active'">
-      <ion-card *ngFor = "let item of items">
-        <img src = "{{item.img}}"/>
-        <div class = "card-title">{{item.title}}</div>
+  <ion-spinner name="bubbles" *ngSwitchCase="'loading'"></ion-spinner>
 
-      </ion-card>
-    </div>
+  <div *ngSwitchCase="'active'">
+    <ion-card *ngFor = "let item of items">
+      <img src = "{{item.img}}"/>
+      <div class = "card-title">{{item.title}}</div>
 
-  </ion-content>
+    </ion-card>
+  </div>
 
 </ion-content>

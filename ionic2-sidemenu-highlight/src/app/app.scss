@@ -15,6 +15,13 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-.top-header{
-  background: url('../../assets/image/header.png');
+
+app {
+  .top-header{
+    color:white;
+    background: url('../../assets/image/header.png');
+    align-self: center;
+    background-size: cover;
+  }
+
 }

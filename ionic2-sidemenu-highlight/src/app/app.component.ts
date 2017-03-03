@@ -14,6 +14,7 @@ import { BetaTested } from '../pages/betaTested/betaTested';
 
 
 @Component({
+  selector: 'app',
   templateUrl: 'app.html',
   providers: [RugbyService]
 })

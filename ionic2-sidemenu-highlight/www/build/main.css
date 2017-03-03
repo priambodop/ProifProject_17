@@ -1,7 +1,3 @@
-.header {
-  background-image: url("image/header.png");
-}
-
 ion-spinner {
   position: absolute;
   position: absolute;
@@ -21286,20 +21282,17 @@ sub {
   }
 }
 
-.top-header {
+app .top-header {
+  color: white;
   background: url("../../assets/image/header.png");
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  background-size: cover;
 }
 
-.card-background-page h3 {
-  position: absolute;
-}
-
-.card-background-page ion-card {
-  position: relative;
-  text-align: center;
-}
-
-.card-background-page .card-title {
+Fixtures .card-title {
   position: absolute;
   top: 36%;
   font-size: 2.0em;
@@ -21308,7 +21301,7 @@ sub {
   color: #fff;
 }
 
-.card-background-page .card-subtitle {
+Fixtures .card-subtitle {
   font-size: 1.0em;
   position: absolute;
   top: 52%;
@@ -21316,14 +21309,24 @@ sub {
   color: #fff;
 }
 
-news .header {
+Fixtures .header {
   color: white;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  text-align: center;
+  font-size: 60px;
   background: url("../../assets/image/sub-header-news.png");
   background-size: cover;
+  padding-top: 20%;
+  background-position: bottom;
+}
+
+news .header {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  background: url("../../assets/image/sub-header-news.png");
+  background-size: cover;
+  padding-top: 20%;
+  background-position: bottom;
 }
 
 news .card {
@@ -21338,4 +21341,24 @@ news .head {
   -ms-grid-row-align: center;
   align-self: center;
   background-size: cover;
+}
+
+RugbyClubs .header {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  background: url("../../assets/image/sub-header-news.png");
+  background-size: cover;
+  padding-top: 20%;
+  background-position: bottom;
+}
+
+teammate .header {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  background: url("../../assets/image/sub-header-news.png");
+  background-size: cover;
+  padding-top: 20%;
+  background-position: bottom;
 }
