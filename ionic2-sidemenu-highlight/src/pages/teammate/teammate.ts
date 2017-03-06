@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-
 import { NavController } from 'ionic-angular';
+import { RugbyService } from '../../app/services/rugby.service';
+import { AlertController } from 'ionic-angular';
+
 
 @Component({
   selector: 'teammate',
@@ -8,8 +10,29 @@ import { NavController } from 'ionic-angular';
 })
 export class Teammate {
 
-  constructor(public navCtrl: NavController) {
+  items : [any];
 
+  constructor(public navCtrl: NavController, public alerCtrl: AlertController, private rugbyService: RugbyService) {
+
+  }
+
+  ngOnInit(){
+    this.getTeammates();
+  }
+
+  uploadAlert(){
+    let alert = this.alerCtrl.create({
+      title: 'Alert',
+      message: 'Coming Soon!',
+      buttons: ['Ok']
+    });
+    alert.present()
+  }
+
+  getTeammates(){
+    this.rugbyService.getTeammates().subscribe(response => {
+      this.items = response;
+    });
   }
 
 }
