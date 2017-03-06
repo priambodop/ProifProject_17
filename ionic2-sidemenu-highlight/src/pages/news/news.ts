@@ -16,7 +16,7 @@ export class News {
   }
 
   ngOnInit(){
-    this.getPosts();
+    this.getPosts(); 
   }
 
   getPosts(){
