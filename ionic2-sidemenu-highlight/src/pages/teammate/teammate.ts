@@ -31,7 +31,7 @@ export class Teammate {
 
   getTeammates(){
     this.rugbyService.getTeammates().subscribe(response => {
-      console.log(response);
+      this.items = response.data;
     });
   }
 
