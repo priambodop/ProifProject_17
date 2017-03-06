@@ -17,13 +17,14 @@
 
 
 app {
+
   .header {
-    color: white;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    font-size: 60px;
-    background: url('../../assets/image/header.png');
+    background-image: url('/image/header.png');
+    background-repeat: no-repeat;
+    background-size: contain;;
+    height: 25%;
+
   }
+
+
 }

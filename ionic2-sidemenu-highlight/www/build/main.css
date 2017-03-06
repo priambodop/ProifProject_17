@@ -21283,20 +21283,10 @@ sub {
 }
 
 app .header {
-  color: white;
-  text-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  font-size: 60px;
-  background: url("../../assets/image/header.png");
+  background-image: url("/image/header.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 25%;
 }
 
 Fixtures .card-title {
