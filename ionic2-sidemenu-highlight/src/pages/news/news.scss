@@ -5,10 +5,11 @@ news {
     text-align: center;
     font-size: 60px;
     background: url('../../assets/image/sub-header-news.png');
-    //background-repeat: no-repeat;
-    background-size:cover;
-    padding-top: 20%;
+    background-repeat: no-repeat;
+    //background-size:cover;
+    background-size: contain;
     background-position: bottom;
+    padding-top: 25%;
   }
 
   .card{
@@ -21,7 +22,5 @@ news {
     align-self: center;
     background-size: cover;
   }
-
-
 
 }

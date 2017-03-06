@@ -17,11 +17,13 @@
 
 
 app {
-  .top-header{
-    color:white;
-    background: url('../../assets/image/header.png');
+  .header {
+    color: white;
+    text-align: center;
+    align-items: center;
+    align-content: center;
     align-self: center;
-    background-size: cover;
+    font-size: 60px;
+    background: url('../../assets/image/header.png');
   }
-
 }
