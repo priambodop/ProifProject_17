@@ -1,17 +1,14 @@
+<ion-header center class="header">
+  <ion-title><h1>TEAMMATE PHOTOS</h1></ion-title>
+</ion-header>
 
-<ion-content  [ngSwitch]='status'>
-
-  <ion-header class="header">
-    <ion-title><h1>TEAMMATE PHOTO</h1></ion-title>
-  </ion-header>
-
-  <ion-spinner name="bubbles"  *ngSwitchCase="'loading'"></ion-spinner>
-
-  <div *ngSwitchCase="'active'">
-    <ion-card *ngFor = "let item of items.data">
-    <img src="{{item}}"/>
-    </ion-card>
-  </div>
-
-
+<ion-content padding>
+  <button ion-button full >Take a Photo</button>
+  <button ion-button full> Load From Library</button>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-50>LOLOLOLOLLO</ion-col>
+      <ion-col width-50>This column will take 50% of space</ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

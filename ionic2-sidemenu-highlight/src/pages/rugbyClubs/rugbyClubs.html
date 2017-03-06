@@ -9,32 +9,19 @@
 
   <div *ngSwitchCase="'active'">
     <ion-card *ngFor = "let item of items">
-      <img src = "{{item.img}}"/>
-      <div class = "card-title">{{item.title}}</div>
-
-    </ion-card>
+    <img src="{{item.img}}"/>
+    <ion-card-content>
+      <ion-card-title>
+        {{item.name}}
+        </ion-card-title>
+      <p>
+        {{item.location_training}}
+      </p>
+      <p>
+        {{item.contacts[0].value}}
+      </p>
+    </ion-card-content>
+  </ion-card>
   </div>
 
 </ion-content>
-=======
-<ion-content>
-  <ion-header padding centre class="header">
-    <h3>This is rugby clubs Page !</h3>
-  </ion-header>
-  <ion-card *ngFor = "let item of items">
-  <img src="{{item.img}}"/>
-  <ion-card-content>
-    <ion-card-title>
-      {{item.name}}
-      </ion-card-title>
-    <p>
-      {{item.location_training}}
-    </p>
-    <p>
-      {{item.contacts[0].value}}
-    </p>
-  </ion-card-content>
-</ion-card>
-
-  </ion-content>
->>>>>>> 5bdb0e3a13506f3c7f6bc7deb73b6c03959f1a0c
