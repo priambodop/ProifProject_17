@@ -12,7 +12,7 @@ export class Teammate {
 
   items : [any];
 
-  constructor(public navCtrl: NavController, public alerCtrl: AlertController, private rugbyService: RugbyService) {
+  constructor(public navCtrl: NavController, public alerCtrl: AlertController, public rugbyService: RugbyService) {
 
   }
 
@@ -31,7 +31,7 @@ export class Teammate {
 
   getTeammates(){
     this.rugbyService.getTeammates().subscribe(response => {
-      this.items = response;
+      console.log(response);
     });
   }
 

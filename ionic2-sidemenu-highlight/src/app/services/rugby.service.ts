@@ -34,5 +34,4 @@ export class RugbyService{
   getTeammates(){
     return this.http.get(this.teammatesUrl).map(res => res.json());
   }
-
 }
