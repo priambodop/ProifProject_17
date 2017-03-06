@@ -29,7 +29,7 @@ export class Teammate {
 
   getTeammates(){
     this.rugbyService.getTeammates().subscribe(response => {
-      this.items = response;
+      this.items = response.data;
     });
   }
 }
