@@ -2,26 +2,23 @@
   <ion-title><h1>RUGBY CLUBS</h1></ion-title>
 </ion-header>
 
-<<<<<<< HEAD
-<ion-content padding [ngSwitch]='status'  class ="card-background-page">
+<ion-content>
+  <ion-header padding centre class="header">
+    <h3>This is rugby clubs Page !</h3>
+  </ion-header>
+  <ion-card *ngFor = "let item of items">
+  <img src="{{item.img}}"/>
+  <ion-card-content>
+    <ion-card-title>
+      {{item.name}}
+      </ion-card-title>
+    <p>
+      {{item.location_training}}
+    </p>
+    <p>
+      {{item.contacts[0].value}}
+    </p>
+  </ion-card-content>
+</ion-card>
 
-  <ion-spinner name="bubbles" *ngSwitchCase="'loading'"></ion-spinner>
-
-  <div *ngSwitchCase="'active'">
-    <ion-card *ngFor = "let item of items">
-    <img src="{{item.img}}"/>
-    <ion-card-content>
-      <ion-card-title>
-        {{item.name}}
-        </ion-card-title>
-      <p>
-        {{item.location_training}}
-      </p>
-      <p>
-        {{item.contacts[0].value}}
-      </p>
-    </ion-card-content>
-  </ion-card>
-  </div>
-
-</ion-content>
+  </ion-content>

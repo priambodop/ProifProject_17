@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { RugbyService } from '../../app/services/rugby.service';
+import {RugbyService} from '../../app/services/rugby.service';
 import { AlertController } from 'ionic-angular';
 
 @Component({
@@ -11,7 +11,6 @@ export class Teammate {
   items: [any];
 
   constructor(public navCtrl: NavController, public alerCtrl: AlertController, private rugbyService: RugbyService) {
-
   }
 
   ngOnInit(){
@@ -27,9 +26,10 @@ export class Teammate {
     alert.present()
   }
 
+
   getTeammates(){
     this.rugbyService.getTeammates().subscribe(response => {
-      this.items = response.data;
+      this.items = response;
     });
   }
 }
