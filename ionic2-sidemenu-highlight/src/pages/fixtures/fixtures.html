@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <ion-header center class="header">
   <ion-title><h1>FIXTURES AND RESULT</h1></ion-title>
@@ -19,4 +20,21 @@
     </ion-content>
   </div>
 
+=======
+<ion-header>
+  <ion-navbar >
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Fixtures & Result</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="card-background-page">
+
+  <ion-list *ngFor = "let item of items">
+    <img src="{{item.img}}"/>
+    <div class="card-title">{{item.title}}</div>
+  </ion-list>
+>>>>>>> origin/master
 </ion-content>

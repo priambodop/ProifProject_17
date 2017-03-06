@@ -3,6 +3,7 @@
   <ion-title><h1>LATEST NEWS</h1></ion-title>
 </ion-header>
 
+<<<<<<< HEAD
 <ion-content  [ngSwitch]='status'>
 
   <ion-spinner name="bubbles"  *ngSwitchCase="'loading'"></ion-spinner>
@@ -24,5 +25,25 @@
     </ion-card>
   </div>
 
+=======
+<ion-content>
+  <ion-header padding centre class="header">
+    <h3>This is News Page !</h3>
+  </ion-header>
+  <ion-card *ngFor = "let item of items">
+  <img src="{{item.img}}"/>
+  <ion-card-content>
+    <ion-card-title>
+      {{item.title}}
+      </ion-card-title> 
+    <p>
+      {{item.summary}}
+    </p>
+    <p>
+      <a href="{{item.summary}}"><i>read more...</i></a>
+    </p>
+  </ion-card-content>
+</ion-card>
+>>>>>>> origin/master
 
 </ion-content>

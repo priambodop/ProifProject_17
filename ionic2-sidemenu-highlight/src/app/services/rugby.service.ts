@@ -16,7 +16,11 @@ export class RugbyService{
     this.baseUrl = "https://ri-admin.azurewebsites.net/indonesianrugby/news/list.json ";
     this.fixturesUrl = "https://ri-admin.azurewebsites.net/indonesianrugby/fixtures/list.json";
     this.clubsUrl = "https://ri-admin.azurewebsites.net/indonesianrugby/clubs/list.json";
+<<<<<<< HEAD
     this.teammatesUrl = "https://ri-admin.azurewebsites.net/indonesianrugby/photos/list.json";
+=======
+    this.teammatesUrl = "https://ri-admin.azurewebsites.net/indonesianrugby/photos/list.json"
+>>>>>>> origin/master
   }
 
   getPosts(){
@@ -34,5 +38,8 @@ export class RugbyService{
   getTeammates(){
     return this.http.get(this.teammatesUrl).map(res => res.json());
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 }
