@@ -21351,6 +21351,11 @@ RugbyClubs .header {
   background-position: bottom;
 }
 
+RugbyClubs p {
+  width: auto;
+  height: auto;
+}
+
 teammate .header {
   color: white;
   text-align: center;

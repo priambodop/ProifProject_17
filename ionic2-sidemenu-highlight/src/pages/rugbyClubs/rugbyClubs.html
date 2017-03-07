@@ -3,22 +3,13 @@
 </ion-header>
 
 <ion-content>
-  <ion-header padding centre class="header">
-    <h3>This is rugby clubs Page !</h3>
-  </ion-header>
-  <ion-card *ngFor = "let item of items">
-  <img src="{{item.img}}"/>
-  <ion-card-content>
-    <ion-card-title>
-      {{item.name}}
-      </ion-card-title>
-    <p>
-      {{item.location_training}}
-    </p>
-    <p>
-      {{item.contacts[0].value}}
-    </p>
-  </ion-card-content>
-</ion-card>
+  <ion-list *ngFor = "let item of items">
+    <ion-item>
+      <ion-thumbnail item-left><img src="{{item.img}}"/></ion-thumbnail>
+        <h2><b>{{item.name}}</b></h2>
+        <p>{{item.location_training}}</p>
+        <p>{{item.contacts[0].value}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
 
-  </ion-content>
