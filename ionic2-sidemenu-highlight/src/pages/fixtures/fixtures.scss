@@ -22,11 +22,16 @@ Fixtures {
     color: white;
     text-align: center;
     font-size: 60px;
-    background: url('../../assets/image/sub-header-news.png');
+    background: url('/image/sub-header-fixture.png');
     //background-repeat: no-repeat;
     background-size:cover;
-    padding-top: 20%;
+    //padding-top: 20%;
     background-position: bottom;
+    margin-top: 20%;
+  }
+
+  .content{
+    margin-top: 20%;
   }
 
 
