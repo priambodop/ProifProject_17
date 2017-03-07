@@ -21340,10 +21340,6 @@ news .headers {
   width: 100%;
 }
 
-news ion-content {
-  margin-top: 100%;
-}
-
 RugbyClubs .header {
   color: white;
   text-align: center;
