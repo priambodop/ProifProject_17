@@ -21325,41 +21325,19 @@ Fixtures .header {
   color: white;
   text-align: center;
   font-size: 60px;
-  background: url("/image/sub-header-fixture.png");
+  background: url("../../assets/image/sub-header-news.png");
   background-size: cover;
+  padding-top: 20%;
   background-position: bottom;
-  margin-top: 20%;
-}
-
-Fixtures .content {
-  margin-top: 20%;
 }
 
 news .headers {
   color: white;
   text-align: center;
-  background: url("/image/sub-header-news.png");
+  background: url("../../assets/image/sub-header-news.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  margin-top: 20%;
-}
-
-news .content {
-  margin-top: 20%;
-}
-
-rugby101 .headers {
-  color: white;
-  text-align: center;
-  background: url("/image/sub-header-101.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  margin-top: 20%;
-}
-
-rugby101 .content {
   margin-top: 20%;
 }
 
@@ -21367,10 +21345,10 @@ RugbyClubs .header {
   color: white;
   text-align: center;
   font-size: 60px;
-  background: url("/image/sub-header-clubs.png");
+  background: url("../../assets/image/sub-header-news.png");
   background-size: cover;
+  padding-top: 20%;
   background-position: bottom;
-  margin-top: 20%;
 }
 
 RugbyClubs p {
@@ -21378,20 +21356,12 @@ RugbyClubs p {
   height: auto;
 }
 
-RugbyClubs .content {
-  margin-top: 20%;
-}
-
 teammate .header {
   color: white;
   text-align: center;
   font-size: 60px;
-  background: url("/image/sub-header-photo.png");
+  background: url("../../assets/image/sub-header-news.png");
   background-size: cover;
+  padding-top: 20%;
   background-position: bottom;
-  margin-top: 20%;
-}
-
-teammate .content {
-  margin-top: 20%;
 }
