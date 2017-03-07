@@ -34,7 +34,6 @@ export class MyApp {
       { title: 'Rugby Clubs', component: RugbyClubs },
       { title: 'Beta Tested', component: BetaTested }
     ];
-
   }
 
   initializeApp() {
@@ -46,6 +45,9 @@ export class MyApp {
     });
   }
 
+  home(){
+    this.nav.setRoot(News);
+  }
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
