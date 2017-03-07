@@ -9,22 +9,16 @@
 
 <ion-content padding >
   <h3>This is Beta Tested Page !</h3>
-
-  <button ion-button full icon-left>
-  <ion-icon name="camera"></ion-icon>
-  Upload Photo
-</button>
-
-  <ion-grid>
-  <ion-row>
-    <ion-col width-20 >This column will take 20% of space</ion-col>
-    <ion-col width-30 >This column will take 30% of space</ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col width-20 >This column will take 20% of space</ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col width-20 >This column will take 20% of space</ion-col>
-  </ion-row>
-</ion-grid>
+  <ion-card *ngFor="let photo of photos">
+    <ion-card-content>
+      <img [src] = "photo.src">
+      <button ion-button block>
+        <ion-icon name = "heart"></ion-icon>
+        <ion-badge item-right>{{photo.likes}}</ion-badge>
+      </button>
+      <button ion-button color ="danger" block>
+        <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
