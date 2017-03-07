@@ -9,6 +9,7 @@
 
 <ion-content padding >
   <h3>This is Beta Tested Page !</h3>
+  <button (click)="takePhoto()" ion-button block>Take A Photo</button>
   <ion-card *ngFor="let photo of photos">
     <ion-card-content>
       <img [src] = "photo.src">
