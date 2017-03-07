@@ -1,26 +1,15 @@
 news {
 
-  .header {
+  .headers{
     color: white;
     text-align: center;
-    font-size: 60px;
     background: url('../../assets/image/sub-header-news.png');
     background-repeat: no-repeat;
     //background-size:cover;
-    background-size: contain;
-    background-position: bottom;
-    padding-top: 25%;
-  }
-
-  .card{
-    margin-top: 68px;
-  }
-
-  .head{
-    color:white;
-    background: url('../../assets/image/header.png');
-    align-self: center;
     background-size: cover;
+    width: 100%;
   }
-
+  ion-content{
+    margin-top: 100%;
+  }
 }

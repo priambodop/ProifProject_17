@@ -21285,8 +21285,23 @@ sub {
 app .header {
   background-image: url("/image/header.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 25%;
+  background-size: cover;
+  height: 15%;
+  width: 100%;
+  text-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  opacity: 0.9;
+  background-color: black;
+  margin-bottom: inherit;
 }
 
 Fixtures .card-title {
@@ -21316,29 +21331,17 @@ Fixtures .header {
   background-position: bottom;
 }
 
-news .header {
+news .headers {
   color: white;
   text-align: center;
-  font-size: 60px;
   background: url("../../assets/image/sub-header-news.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  padding-top: 25%;
-}
-
-news .card {
-  margin-top: 68px;
-}
-
-news .head {
-  color: white;
-  background: url("../../assets/image/header.png");
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
   background-size: cover;
+  width: 100%;
+}
+
+news ion-content {
+  margin-top: 100%;
 }
 
 RugbyClubs .header {

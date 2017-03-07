@@ -17,14 +17,18 @@
 
 
 app {
-
   .header {
     background-image: url('/image/header.png');
     background-repeat: no-repeat;
-    background-size: contain;;
-    height: 25%;
-
+    background-size: cover;
+    height: 15%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    opacity: 0.9;
+    background-color: black;
+    margin-bottom: inherit;
   }
-
-
 }

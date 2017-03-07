@@ -1,9 +1,12 @@
+<ion-header >
+</ion-header>
 
+<ion-header class="headers"  >
+  <ion-title><h1>LATEST NEWS</h1></ion-title>
+</ion-header>
 <ion-content  [ngSwitch]='status'>
 
-  <ion-header class="header"  >
-    <ion-title><h1>LATEST NEWS</h1></ion-title>
-  </ion-header>
+
   <ion-spinner name="bubbles"  *ngSwitchCase="'loading'"></ion-spinner>
 
   <div *ngSwitchCase="'active'">
