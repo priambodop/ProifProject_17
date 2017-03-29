@@ -1,9 +1,7 @@
 export class Photo{
-  constructor(src: string, likes: number){
-    this.src = src;
-    this.likes =likes;
-  }
+  src:String
 
-  src: string;
-  likes: number;
+  constructor(src: String){
+    this.src = src;
+  }
 }

@@ -1,31 +1,30 @@
-
-<ion-header class="header">
+<ion-header class="background-header">
   <ion-grid>
-    <ion-row >
-      <button ion-button icon-only color="danger" width-10>
-        <button (click)="home()"><ion-icon name="home" color="danger"></ion-icon></button>
-      </button>
-      <ion-title width-80><h5 color="light">Persatuan Rugby <br/> Union Indonesia</h5></ion-title>
-     <button color="danger" ion-button menuToggle right width-10>
-          <ion-icon name="menu"></ion-icon>
-      </button>
-    </ion-row>
-  </ion-grid>
+  <ion-row>
+    <ion-col col-4>
+      <ion-buttons start>
+        <button color="light" ion-button>
+          <button (click)="home()"><ion-icon name="home" color="light"></ion-icon></button>
+        </button>
+      </ion-buttons>
+    </ion-col>
+    <ion-col col-4><ion-title width-80><h5 color="light">Persatuan Rugby <br/> Union Indonesia</h5></ion-title> </ion-col>
+    <ion-col col-4>
+      <ion-buttons end>
+        <button color="light" ion-button menuToggle right>
+             <ion-icon name="menu"></ion-icon>
+         </button>
+      </ion-buttons>
+    </ion-col>
+  </ion-row>
+
+</ion-grid>
+
 </ion-header>
 
 <ion-content></ion-content>
 
-<ion-menu side= "right" [content]="content"  width="10">
-  <ion-header >
-
-    <ion-navbar color="danger">
-      <ion-toolbar>
-        <ion-title >Menu</ion-title>
-      </ion-toolbar>
-    </ion-navbar>
-
-  </ion-header>
-
+<ion-menu class="ion-menu-custom" side= "right" [content]="content" colors="danger">
   <ion-content>
     <ion-list >
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" color="danger">
@@ -34,6 +33,7 @@
     </ion-list>
   </ion-content>
 </ion-menu>
+
 
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->

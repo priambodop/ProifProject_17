@@ -7,7 +7,7 @@ import { Fixtures } from '../pages/fixtures/fixtures';
 import { Teammate } from '../pages/teammate/teammate';
 import { Rugby101 } from '../pages/rugby101/rugby101';
 import { RugbyClubs } from '../pages/rugbyClubs/rugbyClubs';
-import { BetaTested } from '../pages/betaTested/betaTested';
+
 
 
 @Component({
@@ -32,7 +32,7 @@ export class MyApp {
       { title: 'Teammate Photos', component: Teammate },
       { title: 'Rugby 101', component: Rugby101 },
       { title: 'Rugby Clubs', component: RugbyClubs },
-      { title: 'Beta Tested', component: BetaTested }
+
     ];
   }
 

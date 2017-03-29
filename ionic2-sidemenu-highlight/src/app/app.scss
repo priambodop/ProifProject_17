@@ -15,20 +15,16 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+.ios, .md{
 
-app {
-  .header {
-    background-image: url('/image/header.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 15%;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    opacity: 0.9;
-    background-color: black;
-    margin-bottom: inherit;
+  app {
+    .background-header{
+      background-image: url('/image/header.png') !important;
+      height: 12%;
+    }
   }
+  .ion-menu-custom{
+    margin-top: 21% !important;
+  }
+
 }

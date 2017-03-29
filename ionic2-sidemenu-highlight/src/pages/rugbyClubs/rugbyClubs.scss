@@ -4,15 +4,20 @@ RugbyClubs {
     color: white;
     text-align: center;
     font-size: 60px;
-    background: url('../../assets/image/sub-header-news.png');
+    background: url('/image/sub-header-clubs.png');
     //background-repeat: no-repeat;
     background-size:cover;
-    padding-top: 20%;
+    //padding-top: 20%;
     background-position: bottom;
+    margin-top: 20%;
   }
 
   p {
     width : auto;
     height : auto;
+  }
+
+  .content{
+    margin-top: 20%;
   }
 }

@@ -1,14 +1,19 @@
 news {
 
-  .headers{
+  .news-header{
     color: white;
     text-align: center;
-    background: url('../../assets/image/sub-header-news.png');
+    background: url('/image/sub-header-news.png') !important;
     background-repeat: no-repeat;
-    //background-size:cover;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     width: 100%;
-    margin-top: 20%;
+    margin-top: 21%;
+    height: 15%
+  }
+
+  .content{
+    margin-top: 40%;
   }
 
 }
