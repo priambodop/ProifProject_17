@@ -20,11 +20,15 @@
   app {
     .background-header{
       background-image: url('/image/header.png') !important;
-      height: 12%;
+      height: auto;
+    }
+    .ion-menu-custom{
+      height: 100%;
     }
   }
-  .ion-menu-custom{
-    margin-top: 21% !important;
-  }
+
+
+
+
 
 }

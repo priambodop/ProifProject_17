@@ -1,23 +1,20 @@
-<ion-header class="background-header">
-  <ion-grid>
+<ion-header>
+  <ion-grid class="background-header">
   <ion-row>
     <ion-col col-4>
       <ion-buttons start>
-        <button color="light" ion-button>
-          <button (click)="home()"><ion-icon name="home" color="light"></ion-icon></button>
-        </button>
+          <button (click)="home()" ion-button color="danger"><ion-icon name="ios-home"></ion-icon></button>
       </ion-buttons>
     </ion-col>
     <ion-col col-4><ion-title width-80><h5 color="light">Persatuan Rugby <br/> Union Indonesia</h5></ion-title> </ion-col>
     <ion-col col-4>
       <ion-buttons end>
-        <button color="light" ion-button menuToggle right>
+        <button color="danger" ion-button menuToggle right>
              <ion-icon name="menu"></ion-icon>
          </button>
       </ion-buttons>
     </ion-col>
   </ion-row>
-
 </ion-grid>
 
 </ion-header>
@@ -33,6 +30,7 @@
     </ion-list>
   </ion-content>
 </ion-menu>
+
 
 
 
