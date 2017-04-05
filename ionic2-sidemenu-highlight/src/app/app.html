@@ -1,4 +1,9 @@
 <ion-header>
+
+  <div class="header">
+    <img src="assets/image/header.png">
+  </div>
+
   <ion-grid class="background-header">
   <ion-row>
     <ion-col col-4>
@@ -6,7 +11,10 @@
           <button (click)="home()" ion-button color="danger"><ion-icon name="ios-home"></ion-icon></button>
       </ion-buttons>
     </ion-col>
-    <ion-col col-4><ion-title width-80><h5 color="light">Persatuan Rugby <br/> Union Indonesia</h5></ion-title> </ion-col>
+    <ion-col col-4>
+      <img src="assets/image/logo-header.png" >
+      <!-- <ion-title width-80><h5 color="light">Persatuan Rugby <br/> Union Indonesia</h5></ion-title>  -->
+    </ion-col>
     <ion-col col-4>
       <ion-buttons end>
         <button color="danger" ion-button menuToggle right>
@@ -19,7 +27,7 @@
 
 </ion-header>
 
-<ion-content></ion-content>
+<!-- <ion-content></ion-content> -->
 
 <ion-menu class="ion-menu-custom" side= "right" [content]="content" colors="danger">
   <ion-content>

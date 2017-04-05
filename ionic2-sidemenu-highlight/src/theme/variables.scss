@@ -42,6 +42,16 @@ ion-spinner{
 
 $menu-width:  150px;
 
+.header{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+
+
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
