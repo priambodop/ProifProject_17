@@ -16,19 +16,16 @@
 // automatically applied to the <body> element in the app.
 
 .ios, .md{
-
-  app {
-    .background-header{
-      background-image: url('/image/header.png') !important;
-      height: auto;
-    }
-    .ion-menu-custom{
-      height: 100%;
-    }
+  .ion-menu-custom{
+    height: 100%;
+    font-size: 5%;
   }
 
+  .center{
+    text-align: center;
+  }
 
-
-
-
+  ion-content{
+    font-size: 5%;
+  }
 }

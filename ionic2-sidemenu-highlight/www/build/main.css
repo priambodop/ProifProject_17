@@ -12,7 +12,6 @@ ion-spinner {
   width: 100%;
   left: 0;
   top: 0;
-  text-align: center;
 }
 
 .content {
@@ -11431,7 +11430,7 @@ ion-menu.show-menu {
   bottom: 0;
   left: 0;
   display: block;
-  width: 150px;
+  width: 170px;
   height: 100%;
   -webkit-transform: translate3d(-9999px, 0, 0);
   transform: translate3d(-9999px, 0, 0);
@@ -11474,7 +11473,7 @@ ion-menu ion-backdrop {
 
 @media (max-width: 340px) {
   .menu-inner {
-    width: 110px;
+    width: 130px;
   }
 }
 
@@ -21312,13 +21311,17 @@ sub {
   }
 }
 
-.ios app .background-header, .md app .background-header {
-  background-image: url("/image/header.png") !important;
-  height: auto;
+.ios .ion-menu-custom, .md .ion-menu-custom {
+  height: 100%;
+  font-size: 5%;
 }
 
-.ios app .ion-menu-custom, .md app .ion-menu-custom {
-  height: 100%;
+.ios .center, .md .center {
+  text-align: center;
+}
+
+.ios ion-content, .md ion-content {
+  font-size: 5%;
 }
 
 Fixtures .card-title {
