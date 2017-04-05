@@ -10,9 +10,31 @@ ion-spinner {
 .header {
   position: absolute;
   width: 100%;
-  height: 100%;
   left: 0;
   top: 0;
+  text-align: center;
+}
+
+.content {
+  position: static;
+}
+
+.wrap {
+  position: static;
+}
+
+.logo {
+  position: absolute;
+  height: 50px;
+  width: 40px;
+}
+
+.home {
+  position: static;
+}
+
+.menu {
+  position: static;
 }
 
 .ion-ios-add:before {
