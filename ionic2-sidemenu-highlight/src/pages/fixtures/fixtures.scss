@@ -1,5 +1,9 @@
 Fixtures {
 
+  .subh{
+    width: 100%;
+  }
+
   .card-title {
     position: absolute;
     top: 36%;
@@ -16,24 +20,20 @@ Fixtures {
     width: 100%;
     color: #fff;
   }
-
-
-  .header {
-    color: white;
-    text-align: center;
-    font-size: 60px;
-    background: url('/image/sub-header-fixture.png');
-    //background-repeat: no-repeat;
-    background-size:cover;
-    //padding-top: 20%;
-    background-position: bottom;
-    margin-top: 20%;
-  }
-
-  .content{
-    margin-top: 20%;
-  }
-
-
-
+  
+  // .header {
+  //   color: white;
+  //   text-align: center;
+  //   font-size: 60px;
+  //   background: url('/image/sub-header-fixture.png');
+  //   //background-repeat: no-repeat;
+  //   background-size:cover;
+  //   //padding-top: 20%;
+  //   background-position: bottom;
+  //   margin-top: 20%;
+  // }
+  //
+  // .content{
+  //   margin-top: 20%;
+  // }
 }

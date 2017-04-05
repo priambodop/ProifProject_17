@@ -1,26 +1,32 @@
 <!-- <ion-header class="news-header">
   <ion-title><h1>LATEST NEWS</h1></ion-title>
 </ion-header> -->
+<ion-header>
+  <ion-navbar>
+  </ion-navbar>
+</ion-header>
 
-<ion-content  [ngSwitch]='status' class="content">
-  <img src="assets/image/sub-header-news.png">
+<ion-content  [ngSwitch]='status'>
+  <div class="subh">
+    <img src="assets/image/sub-header-news.png">
+  </div>
 
-<ion-spinner name="bubbles"  *ngSwitchCase="'loading'"></ion-spinner>
+  <ion-spinner name="bubbles" *ngSwitchCase="'loading'"></ion-spinner>
 
-<div *ngSwitchCase="'active'">
-  <ion-card *ngFor = "let item of items">
-  <img src="{{item.img}}"/>
-    <ion-card-content>
-      <ion-card-title>
-        {{item.title}}
-        </ion-card-title>
-      <p>
-        {{item.summary}}
-      </p>
-      <p>
-        <a href="{{item.url}}">read more...</a>
-      </p>
-    </ion-card-content>
-  </ion-card>
-</div>
+  <div *ngSwitchCase="'active'">
+    <ion-card *ngFor = "let item of items">
+    <img src="{{item.img}}"/>
+      <ion-card-content>
+        <ion-card-title>
+          {{item.title}}
+          </ion-card-title>
+        <p>
+          {{item.summary}}
+        </p>
+        <p>
+          <a href="{{item.url}}">read more...</a>
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
