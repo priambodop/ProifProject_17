@@ -12,6 +12,7 @@ ion-spinner {
   width: 100%;
   left: 0;
   top: 0;
+  text-align: center;
 }
 
 .content {
@@ -11430,7 +11431,7 @@ ion-menu.show-menu {
   bottom: 0;
   left: 0;
   display: block;
-  width: 170px;
+  width: 150px;
   height: 100%;
   -webkit-transform: translate3d(-9999px, 0, 0);
   transform: translate3d(-9999px, 0, 0);
@@ -11473,7 +11474,7 @@ ion-menu ion-backdrop {
 
 @media (max-width: 340px) {
   .menu-inner {
-    width: 130px;
+    width: 110px;
   }
 }
 
@@ -21309,19 +21310,6 @@ sub {
   .wp .modal-wrapper > .ion-page > ion-header > ion-content.statusbar-padding:first-child[padding-top] .scroll-content {
     padding-top: calc(16px + 20px);
   }
-}
-
-.ios .ion-menu-custom, .md .ion-menu-custom {
-  height: 100%;
-  font-size: 5%;
-}
-
-.ios .center, .md .center {
-  text-align: center;
-}
-
-.ios ion-content, .md ion-content {
-  font-size: 5%;
 }
 
 Fixtures .subh {
