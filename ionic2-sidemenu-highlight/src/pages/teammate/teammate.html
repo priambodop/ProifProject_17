@@ -31,7 +31,13 @@
       <img [src]="photo.src">
     </ion-card-content>
   </ion-card> -->
-
+  <ion-grid>
+    <ion-row wrap>
+      <ion-col width-50 *ngFor="let item of items?.data">
+        <img [src]="item"/>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   <!-- <ion-grid>
     <ion-card *ngFor = "let item of items">
       <img src="{{item.data}}"/>
