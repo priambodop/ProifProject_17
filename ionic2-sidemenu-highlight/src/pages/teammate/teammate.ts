@@ -10,11 +10,24 @@ import {Photo} from '../photo';
   templateUrl: 'teammate.html'
 })
 export class Teammate {
+  items: [any];
+  public status: string;
   public base64Image: string;
   photos: Photo[] = [new Photo('http://placehold.it/350/150')]
 
   constructor(public navCtrl: NavController, private rugbyService: RugbyService) {
+    this.status = 'loading';
+  }
 
+  ngOnInit(){
+    this.getTeammates();
+  }
+
+  getTeammates(){
+    this.rugbyService.getTeammates().subscribe(response =>{
+      this.items = response;
+      this.status = 'active';
+    });
   }
 
   takePhoto(){
