@@ -12,7 +12,6 @@ ion-spinner {
   width: 100%;
   left: 0;
   top: 0;
-  text-align: center;
 }
 
 .content {
@@ -11431,7 +11430,7 @@ ion-menu.show-menu {
   bottom: 0;
   left: 0;
   display: block;
-  width: 150px;
+  width: 170px;
   height: 100%;
   -webkit-transform: translate3d(-9999px, 0, 0);
   transform: translate3d(-9999px, 0, 0);
@@ -11474,7 +11473,7 @@ ion-menu ion-backdrop {
 
 @media (max-width: 340px) {
   .menu-inner {
-    width: 110px;
+    width: 130px;
   }
 }
 
@@ -21312,13 +21311,21 @@ sub {
   }
 }
 
-.ios app .background-header, .md app .background-header {
-  background-image: url("/image/header.png") !important;
-  height: auto;
+.ios .ion-menu-custom, .md .ion-menu-custom {
+  height: 100%;
+  font-size: 5%;
 }
 
-.ios app .ion-menu-custom, .md app .ion-menu-custom {
-  height: 100%;
+.ios .center, .md .center {
+  text-align: center;
+}
+
+.ios ion-content, .md ion-content {
+  font-size: 5%;
+}
+
+Fixtures .subh {
+  width: 100%;
 }
 
 Fixtures .card-title {
@@ -21338,62 +21345,16 @@ Fixtures .card-subtitle {
   color: #fff;
 }
 
-Fixtures .header {
-  color: white;
-  text-align: center;
-  font-size: 60px;
-  background: url("/image/sub-header-fixture.png");
-  background-size: cover;
-  background-position: bottom;
-  margin-top: 20%;
-}
-
-Fixtures .content {
-  margin-top: 20%;
-}
-
-news .news-header {
-  color: white;
-  text-align: center;
-  background: url("/image/sub-header-news.png") !important;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+news .subh {
   width: 100%;
-  margin-top: 20%;
-  height: 15%;
 }
 
 news h1 {
   color: white;
 }
 
-news .content {
-  margin-top: 20%;
-}
-
-rugby101 .headers {
-  color: white;
-  text-align: center;
-  background: url("/image/sub-header-101.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+rugby101 .subh {
   width: 100%;
-  margin-top: 20%;
-}
-
-rugby101 .content {
-  margin-top: 20%;
-}
-
-RugbyClubs .header {
-  color: white;
-  text-align: center;
-  font-size: 60px;
-  background: url("/image/sub-header-clubs.png");
-  background-size: cover;
-  background-position: bottom;
-  margin-top: 20%;
 }
 
 RugbyClubs p {
@@ -21401,20 +21362,10 @@ RugbyClubs p {
   height: auto;
 }
 
-RugbyClubs .content {
-  margin-top: 20%;
+RugbyClubs .subh {
+  width: 100%;
 }
 
-teammate .header {
-  color: white;
-  text-align: center;
-  font-size: 60px;
-  background: url("/image/sub-header-photo.png");
-  background-size: cover;
-  background-position: bottom;
-  margin-top: 20%;
-}
-
-teammate .content {
-  margin-top: 20%;
+teammate .subh {
+  width: 100%;
 }
