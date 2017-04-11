@@ -2,10 +2,15 @@
   <ion-title><h1>RUGBY CLUBS</h1></ion-title>
 </ion-header> -->
 
-<ion-content class="content">
+<ion-header>
+  <ion-navbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
   <img src="assets/image/sub-header-clubs.png">
   <ion-list *ngFor = "let item of items">
-    <ion-item>
+    <ion-item text-wrap>
       <ion-thumbnail item-left><img src="{{item.img}}"/></ion-thumbnail>
         <h2><b>{{item.name}}</b></h2>
         <p>{{item.location_training}}</p>

@@ -2,7 +2,12 @@
   <ion-title><h1>LATEST NEWS</h1></ion-title>
 </ion-header> -->
 
-<ion-content  [ngSwitch]='status' class="content">
+<ion-header>
+  <ion-navbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content  [ngSwitch]='status'>
   <img src="assets/image/sub-header-news.png">
 
 <ion-spinner name="bubbles"  *ngSwitchCase="'loading'"></ion-spinner>

@@ -12,29 +12,14 @@ ion-spinner {
   width: 100%;
   left: 0;
   top: 0;
-  text-align: center;
 }
 
-.content {
-  position: static;
-}
-
-.wrap {
-  position: static;
-}
-
-.logo {
+.logoheader {
   position: absolute;
-  height: 50px;
-  width: 40px;
-}
-
-.home {
-  position: static;
-}
-
-.menu {
-  position: static;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
 }
 
 .ion-ios-add:before {
@@ -11431,7 +11416,7 @@ ion-menu.show-menu {
   bottom: 0;
   left: 0;
   display: block;
-  width: 150px;
+  width: 200px;
   height: 100%;
   -webkit-transform: translate3d(-9999px, 0, 0);
   transform: translate3d(-9999px, 0, 0);
@@ -11474,7 +11459,7 @@ ion-menu ion-backdrop {
 
 @media (max-width: 340px) {
   .menu-inner {
-    width: 110px;
+    width: 160px;
   }
 }
 
@@ -21310,6 +21295,10 @@ sub {
   .wp .modal-wrapper > .ion-page > ion-header > ion-content.statusbar-padding:first-child[padding-top] .scroll-content {
     padding-top: calc(16px + 20px);
   }
+}
+
+.contents {
+  background-color: #f53d3d;
 }
 
 Fixtures .subh {

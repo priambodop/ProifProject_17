@@ -9,7 +9,7 @@
       <img src="assets/image/header.png" >
     </div>
 
-    <div class="header">
+    <div class="logoheader">
       <img src="assets/image/logo-header.png" height="50px">
     </div>
 
@@ -81,15 +81,86 @@
 
 <!-- <ion-content></ion-content> -->
 
-<ion-menu class="ion-menu-custom" side= "right" [content]="content" colors="danger">
-  <ion-content>
+<ion-menu class="ion-menu-custom" side= "right" [content]="content">
+  <ion-content class="contents">
     <ion-list >
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" color="danger">
         {{p.title}}
       </button>
     </ion-list>
+
+    <div padding class="bottom-menu" >
+      <p>
+        Contacts:  <br> <br>
+        info@rugbyindonesia.or.id <br>
+        www.rugbyindonesia.or.id <br> <br>
+
+        Connect with us: <br>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <img src="assets/image/twitter.png">
+            </ion-col>
+
+            <ion-col>
+              <img src="assets/image/facebook.png">
+            </ion-col>
+
+            <ion-col>
+              <img src="assets/image/vine.png">
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <img src="assets/image/gplus.png">
+            </ion-col>
+
+            <ion-col>
+              <img src="assets/image/youtube.png">
+            </ion-col>
+
+            <ion-col>
+              <img src="assets/image/instagram.png">
+            </ion-col>
+          </ion-row>
+
+        </ion-grid>
+
+        <br><br>
+        Affiliations
+        <br>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <img src="assets/image/affiliate-worldrugby.png" alt="">
+            </ion-col>
+
+            <ion-col>
+              <img src="assets/image/affiliate-arfu.png" alt="">
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <img src="assets/image/affiliate-koni.png" alt="">
+            </ion-col>
+
+            <ion-col>
+              <img src="assets/image/affiliate-nocindonesia.png" alt="">
+            </ion-col>
+          </ion-row>
+
+        </ion-grid>
+
+
+      </p>
+
+    </div>
   </ion-content>
 </ion-menu>
+
+
 
 
 
