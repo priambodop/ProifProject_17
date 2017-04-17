@@ -21301,6 +21301,10 @@ sub {
   background-color: #e60000;
 }
 
+p {
+  color: white;
+}
+
 Fixtures .subh {
   width: 100%;
 }
