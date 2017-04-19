@@ -8,7 +8,8 @@
 </ion-header>
 
 <ion-content  [ngSwitch]='status'>
-  <img src="assets/image/sub-header-news.png">
+  <img src="assets/image/sub-header-news.png" class="header"/>
+  <ion-title><h1>LATEST NEWS</h1></ion-title>
 
 <ion-spinner name="bubbles"  *ngSwitchCase="'loading'"></ion-spinner>
 

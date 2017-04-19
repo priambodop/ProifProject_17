@@ -22,6 +22,15 @@ ion-spinner {
   text-align: center;
 }
 
+h1 {
+  color: white;
+  padding-top: 30px;
+}
+
+ion-title {
+  text-align: center;
+}
+
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -21323,14 +21332,6 @@ Fixtures .card-subtitle {
 }
 
 news .subh {
-  width: 100%;
-}
-
-news h1 {
-  color: white;
-}
-
-rugby101 .subh {
   width: 100%;
 }
 
