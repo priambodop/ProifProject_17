@@ -1,23 +1,24 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import {Camera, File} from 'ionic-native';
 import { NavController, ToastController,LoadingController, Loading, NavParams, Nav } from 'ionic-angular';
-import {Http} from '@angular/http';
+import {Http, Headers, RequestOptions} from '@angular/http';
 import {Teammate} from '../../pages/teammate/teammate';
 
 declare var cordova: any;
 
 @Component({
   selector: 'photoEditor',
-  templateUrl: 'PhotoEditor.html'
+  templateUrl: 'photoEditor.html'
 })
 export class PhotoEditor {
 
   @ViewChild('canvasContent') canvasContent: ElementRef;
   base64Image:string;
-  dataUrl:string = 'url';
+  dataUrl:string = 'ceo';
   frame:string;
   lastImage: string;
   loading: Loading;
+  path:string;
   json:any;
   navig: any;
 
@@ -27,7 +28,7 @@ export class PhotoEditor {
   public navParams: NavParams,
   public toastCtrl: ToastController,
   public loadingCtrl: LoadingController) {
-    this.json = 'json';
+    this.json = 'ceo';
     this.http.get('https://ri-admin.azurewebsites.net/indonesianrugby/photos/list.json')
     .subscribe(res => this.json = res.json());
     this.navig = nav;
@@ -36,12 +37,13 @@ export class PhotoEditor {
   }
 
   //buat nama baru untuk image nya
-  private createFileName(){
-    var d = new Date(),
-    n = d.getTime(),
-    newFileName = n + ".jpg";
-    return newFileName;
-  }
+  // private createFileName(){
+  //   var d = new Date(),
+  //   n = d.getTime(),
+  //   newFileName = n + ".jpg";
+  //   return newFileName;
+  // }
+  //kayanya ga kepake
 
   //copy image ke folder lokal
   private copyFileToLocalDir(namePath, currentName, newFileName){
@@ -74,7 +76,13 @@ export class PhotoEditor {
     var url = "https://ri-admin.azurewebsites.net/indonesianrugby/photos/upload.json";
 
     //file for upload
-    var targetPath = this.pathForImage(this.lastImage);
+
+    this.path = '';
+
+    console.log(this.path);
+
+    var headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded'});
+    var options = new RequestOptions({headers: headers});
 
     this.loading = this.loadingCtrl.create({
       content: 'Uploading...',
@@ -85,8 +93,8 @@ export class PhotoEditor {
     this.dataUrl = this.dataUrl.replace(/^data:image\/[a-z]+;base64,/, "");
     var dataPost = 'userId=frameoo&photo=' + this.dataUrl;
 
-    this.http.post(url, dataPost).subscribe(res => this.json = res.json());
-    console.log('asd' + JSON.stringify(this.json));
+    this.http.post(url, dataPost,options).subscribe(res => this.json = res.json());
+    console.log('ceo' + JSON.stringify(this.json));
     this.loading.dismissAll();
     this.movePage();
 
@@ -109,43 +117,43 @@ export class PhotoEditor {
 
   selectFrame(frame:string){
     if(frame==='frame01'){
-      this.frame = "assets/img/frame01.png";
+      this.frame = "assets/image/frame01.png";
       this.ngAfterViewInit();
     }
     else if(frame==='frame02'){
-      this.frame = "assets/img/frame02.png";
+      this.frame = "assets/image/frame02.png";
       this.ngAfterViewInit();
     }
     else if(frame==='frame03'){
-      this.frame = "assets/img/frame03.png";
+      this.frame = "assets/image/frame03.png";
       this.ngAfterViewInit();
     }
     else if(frame==='frame04'){
-      this.frame = "assets/img/frame04.png";
+      this.frame = "assets/image/frame04.png";
       this.ngAfterViewInit();
     }
     else if(frame==='frame05'){
-      this.frame = "assets/img/frame05.png";
+      this.frame = "assets/image/frame05.png";
       this.ngAfterViewInit();
     }
     else if(frame==='frame06'){
-      this.frame = "assets/img/frame06.png";
+      this.frame = "assets/image/frame06.png";
       this.ngAfterViewInit();
     }
     else if(frame==='frame07'){
-      this.frame = "assets/img/frame07.png";
+      this.frame = "assets/image/frame07.png";
       this.ngAfterViewInit();
     }
     else if(frame==='frame08'){
-      this.frame = "assets/img/frame08.png";
+      this.frame = "assets/image/frame08.png";
       this.ngAfterViewInit();
     }
     else if(frame==='frame09'){
-      this.frame = "assets/img/frame09.png";
+      this.frame = "assets/image/frame09.png";
       this.ngAfterViewInit();
     }
     else if(frame==='frame10'){
-      this.frame = "assets/img/frame10.png";
+      this.frame = "assets/image/frame10.png";
       this.ngAfterViewInit();
     }
   }

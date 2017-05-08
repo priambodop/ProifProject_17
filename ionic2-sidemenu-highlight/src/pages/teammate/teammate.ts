@@ -77,7 +77,7 @@ export class Teammate {
     };
 
     Camera.getPicture(options).then((imageData) => {
-      this.base64Image = 'data:image/png:base64,' + imageData;
+      this.base64Image = 'data:image/png;base64,' + imageData;
       this.lastImage = this.base64Image;
       this.navCtrl.push(PhotoEditor, {base64:this.lastImage});
     }, (err) => {
@@ -86,9 +86,9 @@ export class Teammate {
   }
 
   // copy image ke folder lokal
-  private copyFileToLocalDir(namePath, currentName, newFileName){
-    File.copyFile(namePath, currentName, cordova.file.dataDirectory, newFileName).then(success => {
-      this.lastImage = newFileName;
+  private copyFileToLocalDir(namePath, currentName, base64Image){
+    File.copyFile(namePath, currentName, cordova.file.dataDirectory, base64Image).then(success => {
+      this.lastImage = base64Image;
     }, error => {
       this.presentToast('Terjadi Error saat menyimpan file');
     });
@@ -97,7 +97,7 @@ export class Teammate {
   private presentToast(text) {
     let toast = this.toastCtrl.create({
       message: text,
-      duration: 3000,
+      duration: 5000,
       position: 'top'
     });
     toast.present();

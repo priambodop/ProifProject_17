@@ -6,6 +6,8 @@ import { Fixtures } from '../pages/fixtures/fixtures';
 import { Teammate } from '../pages/teammate/teammate';
 import { Rugby101 } from '../pages/rugby101/rugby101';
 import { RugbyClubs } from '../pages/rugbyClubs/rugbyClubs';
+import { PhotoEditor } from '../pages/photoEditor/photoEditor';
+
 
 
 @NgModule({
@@ -16,6 +18,7 @@ import { RugbyClubs } from '../pages/rugbyClubs/rugbyClubs';
     Rugby101,
     RugbyClubs,
     Fixtures,
+    PhotoEditor
 
   ],
   imports: [
@@ -29,7 +32,7 @@ import { RugbyClubs } from '../pages/rugbyClubs/rugbyClubs';
     Rugby101,
     RugbyClubs,
     Fixtures,
-    
+    PhotoEditor
 
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
