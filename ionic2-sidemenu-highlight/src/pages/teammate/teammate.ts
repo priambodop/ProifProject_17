@@ -87,33 +87,33 @@ export class Teammate {
 
   //unused
   // copy image ke folder lokal
-  private copyFileToLocalDir(namePath, currentName, base64Image){
-    File.copyFile(namePath, currentName, cordova.file.dataDirectory, base64Image).then(success => {
-      this.lastImage = base64Image;
-    }, error => {
-      this.presentToast('Terjadi Error saat menyimpan file');
-    });
-  }
+  // private copyFileToLocalDir(namePath, currentName, base64Image){
+  //   File.copyFile(namePath, currentName, cordova.file.dataDirectory, base64Image).then(success => {
+  //     this.lastImage = base64Image;
+  //   }, error => {
+  //     this.presentToast('Terjadi Error saat menyimpan file');
+  //   });
+  // }
 
   //unused
-  private presentToast(text) {
-    let toast = this.toastCtrl.create({
-      message: text,
-      duration: 5000,
-      position: 'top'
-    });
-    toast.present();
-  }
+  // private presentToast(text) {
+  //   let toast = this.toastCtrl.create({
+  //     message: text,
+  //     duration: 5000,
+  //     position: 'top'
+  //   });
+  //   toast.present();
+  // }
 
 
   //unused
-  public pathForImage(img){
-    if(img === null){
-      return '';
-    } else{
-      return cordova.file.dataDirectory + img;
-    }
-  }
+  // public pathForImage(img){
+  //   if(img === null){
+  //     return '';
+  //   } else{
+  //     return cordova.file.dataDirectory + img;
+  //   }
+  // }
 
   // movePage(){
   //   this.navi.setRoot(PhotoEditor);

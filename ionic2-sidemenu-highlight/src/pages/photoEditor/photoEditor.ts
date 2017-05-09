@@ -47,32 +47,32 @@ export class PhotoEditor {
 
   //unused
   //copy image ke folder lokal
-  private copyFileToLocalDir(namePath, currentName, newFileName){
-    File.copyFile(namePath, currentName, cordova.file.dataDirectory, newFileName).then(success => {
-      this.lastImage = newFileName;
-    }, error => {
-      this.presentToast('Error while storing file.');
-    });
-  }
+  // private copyFileToLocalDir(namePath, currentName, newFileName){
+  //   File.copyFile(namePath, currentName, cordova.file.dataDirectory, newFileName).then(success => {
+  //     this.lastImage = newFileName;
+  //   }, error => {
+  //     this.presentToast('Error while storing file.');
+  //   });
+  // }
 
   //unused
-  private presentToast(text) {
-    let toast = this.toastCtrl.create({
-      message: text,
-      duration: 3000,
-      position: 'top'
-    });
-    toast.present();
-  }
+  // private presentToast(text) {
+  //   let toast = this.toastCtrl.create({
+  //     message: text,
+  //     duration: 3000,
+  //     position: 'top'
+  //   });
+  //   toast.present();
+  // }
 
   //unused
-  public pathForImage(img){
-    if(img === null){
-      return '';
-    } else{
-      return cordova.file.dataDirectory + img;
-    }
-  }
+  // public pathForImage(img){
+  //   if(img === null){
+  //     return '';
+  //   } else{
+  //     return cordova.file.dataDirectory + img;
+  //   }
+  // }
 
   public uploadImage(){
     //destination url
