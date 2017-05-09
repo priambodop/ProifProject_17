@@ -85,6 +85,7 @@ export class Teammate {
     });
   }
 
+  //unused
   // copy image ke folder lokal
   private copyFileToLocalDir(namePath, currentName, base64Image){
     File.copyFile(namePath, currentName, cordova.file.dataDirectory, base64Image).then(success => {
@@ -94,6 +95,7 @@ export class Teammate {
     });
   }
 
+  //unused
   private presentToast(text) {
     let toast = this.toastCtrl.create({
       message: text,
@@ -103,6 +105,8 @@ export class Teammate {
     toast.present();
   }
 
+
+  //unused
   public pathForImage(img){
     if(img === null){
       return '';

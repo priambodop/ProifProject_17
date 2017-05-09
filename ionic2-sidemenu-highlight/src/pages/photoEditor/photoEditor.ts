@@ -45,6 +45,7 @@ export class PhotoEditor {
   // }
   //kayanya ga kepake
 
+  //unused
   //copy image ke folder lokal
   private copyFileToLocalDir(namePath, currentName, newFileName){
     File.copyFile(namePath, currentName, cordova.file.dataDirectory, newFileName).then(success => {
@@ -54,6 +55,7 @@ export class PhotoEditor {
     });
   }
 
+  //unused
   private presentToast(text) {
     let toast = this.toastCtrl.create({
       message: text,
@@ -63,6 +65,7 @@ export class PhotoEditor {
     toast.present();
   }
 
+  //unused
   public pathForImage(img){
     if(img === null){
       return '';
